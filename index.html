@@ -50,6 +50,8 @@
 			var contact = $('#contact_no').val();
 			$('#stuff').append("<tr><td>"+fname+"</td><td>"+lname+"</td><td>"+email+"</td><td>"+contact+"</td></tr>");
 			event.preventDefault();
+			//added label inheritance to avoid changing submit button
+			$('form label input').val("");
 		});
 	})
 	</script>
